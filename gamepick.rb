@@ -22,6 +22,7 @@ else
 end
 
 romdir = Dir.new(rompath)
+change_snd = Sound.load(config["sounds"]["change"])
 
 games = []
 romdir.each {|filename| games << filename}
@@ -71,11 +72,13 @@ until game_over do
             games = games.rotate
             title(games.first,font,screen,texpos)
             screen.update
+            change_snd.play
           when K_UP
             screen.fill [0,0,0]
             games = games.rotate(-1)
             title(games.first,font,screen,texpos)
             screen.update
+            change_snd.play
           when K_ESCAPE
             game_over = true
           when K_RETURN

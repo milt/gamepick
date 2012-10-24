@@ -7,3 +7,7 @@ paths:
 
 display:
   maxres: [1280,1024]
+
+sounds:
+  change: assets/blrp.wav
+
