@@ -1,0 +1,9 @@
+# config.yaml
+
+paths:
+  mame: /Users/you/mame
+  rom: /Users/you/roms
+  font: assets/8bit.ttf
+
+display:
+  maxres: [1280,1024]
