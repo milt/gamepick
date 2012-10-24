@@ -1,0 +1,5 @@
+= gamepick
+
+A simple frontend for MAME.
+
+Developed for use in a Raspberry Pi-based gaming table
